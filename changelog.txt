@@ -1,0 +1,57 @@
+=== Version 1.1.0 ===
+- Added counters
+- Added two new commands:
+    -> "crash" - increases the crash counter by one and displays the current counter value
+    -> "bw" - increases the bw counter by one and displays the current counter value
+    (both commands have 10s channel cooldown to prevent multiple people increasing the counter at the same time)
+- Fixed a problem where some aliases for commands didn't work
+- Added new "lb" command alias - "board"
+- Added new "steal" command alias - "take"
+
+=== Version 1.1.1 ===
+- Counter commands now require user to be a vip or above
+
+=== Version 1.1.2 ===
+- Bugfixes
+
+=== Version 1.2.0 ===
+- Various Bugfixes and adjustments
+- Economy changes:
+    -> work: points 40 -> 50
+    -> starting: points 50 -> 400
+    -> slots: win reward 150 -> 200
+    -> slotsplus: win reward 6000 -> 2500
+    -> slotsplus: cost 20 -> 10
+- Changed the gamble successs chance: 25% -> 30%
+- Added new easter eggs
+- Added couple admin commands ("bug", "addpointsall")
+- Added error handlers for various errors
+- Slots rework! Normal slots now refund you your catnip when you get a small win,
+  slotsplus are now more profitable, but without the refund
+- Steal command rework:
+    -> steal chance: 25% -> 30%
+    -> max steal ammount: 20% -> 30%
+    -> jail idea scrapped
+    -> failing now forces you to pay a bail out fee equal to a certain percentage of your current catnip in storage (10% - 60%)
+
+=== Version 1.3.0 ===
+- Lotto game added:
+    -> "$lotto <catnip_ammount> <your_lucky_number> <minimum_players>" use to start playing
+    -> "catnip_ammount" - how much catnip are you adding to the prize pool
+    -> "your_lucky_number" - number between 1 and 20 which can be shared with other players, dividing the prize equally
+    -> "minimum_players" - optional argument, use to specify the minimal ammount of players for game to conclude while creating a game yourself
+- Easter egg, may be connected to lotto in some way or another 👀
+- PS Some things can be a little buggy! One could say the lotto is in beta, thank you for understanding <3
+
+=== Version 1.3.1 ===
+- Fixed lotto not working at all 👍
+- Lotto will now conclude and pick the winning number 3 minutes after "minimum_players" condition is fulfilled
+- Set a minimum amount of catnip needed for participating in lotto to 200g
+
+=== Version 1.3.2 ===
+- Fixed a bug where you could get into debt while joining lotto (sorry)
+- Fixed a bug where people could join lotto without registering
+
+=== Version 1.3.5 ===
+- Implemented work levels
+- You can now use "all" in $give just like it is with $gamble
