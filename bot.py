@@ -11,8 +11,8 @@ from operator import itemgetter
 # ===========================================================================
 
 
-TOKEN='oauth:0ig7bjlzvnss3o4navanvbgzo9mrqq'
-CLIENT_ID='gp762nuuoqcoxypju8c569th9wz7q5'
+TOKEN='==='
+CLIENT_ID='==='
 BOT_NICK='Teriibot'
 BOT_PREFIX='$'
 CHANNEL='irivv'
